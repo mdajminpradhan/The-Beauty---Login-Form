@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('images/12.jpg');
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.form-section {
+    height: 500px;
+    width: 95%;
+    border-radius: 10px;
+    padding: 0 30px;
+    position: relative;
+}
+
+.form-section::before {
+    background: rgba(0,0,0,0.6);
+    content:'';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 1px;
+    top: 0;
+    z-index: -1;
+}
+
+.user {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1 {
+	color: white;
+	background: deepskyblue;
+	text-align: center;
+	height: 90px;
+	width: 90px;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+h1 i {
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+
+.form {
+    margin-top: 50px;
+    padding-top: 100px;
+    z-index: 2;
+}
+
+label, input {
+    display: block;
+    background: transparent;
+    border: none;
+    color: White;
+    margin-top: 17px;
+}
+
+input {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.email, .password {
+    border-bottom: 1px solid #ddd;
+}
+
+.password {
+    margin-top: 30px;
+}
+
+.remember {
+    display: flex;
+}
+
+.remember input {
+    outline: none;
+}
+
+.remember label {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.submit {
+    margin-top: 30px;
+}
+
+
+.btn {
+    background: darkorange;
+    padding: 2% 40%;
+    border-radius: 30px;
+    color: black;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1215px){
+    .wrapper {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .wrapper {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 675px){
+    .wrapper {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 510px){
+    .wrapper {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .wrapper {
+        width: 80%;
+    }
+
+    h1 {
+
+        height: 70px;
+        width: 70px;
+    }
+
+}
