@@ -1,41 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Beauty</title>
     <!-- fontawesome css -->
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body>
     <div class="wrapper">
-        <div class="form-section">
-            <div class="user">
-                <h1><i class="fas fa-user-alt"></i></h1>
-            </div>
-            <div class="form">
-                <form action="">
-                    <div class="email">
-                        <label for="">Email address</label>
-                        <input type="text" id="email">
-                    </div>
-                    <div class="password">
-                        <label for="">Password</label>
-                        <input type="password" id="password">
-                    </div>
-                    <div class="remember">
-                        <input type="checkbox" name="" id="rem">
-                        <label for="rem">Remember Me</label>
-                    </div>
-                    <div class="submit">
-                        <input type="submit" value="Login" class="btn">
-                    </div>
-                </form>
-            </div>
+      <div class="left_section">
+        <div class="left_section_box">
+          <span></span>
+          <div class="social_login login_facebook">
+            <i class="fab fa-facebook-square"></i>
+            Login with Facebook
+          </div>
+          <div class="social_login login_twitter">
+            <i class="fab fa-twitter"></i>
+            Login with Twitter
+          </div>
+          <div class="social_login login_linkedin">
+            <i class="fab fa-linkedin"></i>
+            Login with Linkedin
+          </div>
         </div>
+      </div>
+      <div class="middle_section">
+        <div class="middle_section_context">
+          <span></span>
+          <p class="or">OR</p>
+          <span></span>
+        </div>
+      </div>
+      <div class="right_section">
+        <div class="button_box">
+          <button class="bg_active_button"></button>
+          <button class="login_button">Login</button>
+          <button class="signup_button">Sign Up</button>
+        </div>
+        <div class="login">
+          <form action="">
+            <div class="login_input username">
+              <div class="login_input_icon">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="login_input_box">
+                <label for="username" class="username_label">Username</label>
+                <input type="text" id="username" required />
+              </div>
+            </div>
+            <div class="login_input password">
+              <div class="login_input_icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="login_input_box">
+                <label for="password" class="password_label">Password</label>
+                <input type="password" id="password" required />
+              </div>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="agree" />
+              <label for="agree">Keep me logged in</label>
+            </div>
+            <input type="submit" value="Log In" class="sign_up_submit" />
+          </form>
+        </div>
+        <div class="sign_up">
+          <form action="">
+            <div class="sign_up_input username">
+              <div class="sign_up_input_icon">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="sign_up_input_box">
+                <label for="username" class="username_label">Username</label>
+                <input type="text" id="username" required />
+              </div>
+            </div>
+
+            <div class="sign_up_input full_name">
+              <div class="sign_up_input_icon">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="sign_up_input_box">
+                <label for="fullname" class="fullname_label">Full name</label>
+                <input type="text" id="fullname" required />
+              </div>
+            </div>
+            <div class="sign_up_input email">
+              <div class="sign_up_input_icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="sign_up_input_box">
+                <label for="email" class="email_label">Email address</label>
+                <input type="text" id="email" required />
+              </div>
+            </div>
+            <div class="sign_up_input password">
+              <div class="sign_up_input_icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="sign_up_input_box">
+                <label for="password" class="password_label">Password</label>
+                <input type="password" id="password" required />
+              </div>
+            </div>
+            <div class="sign_up_input password">
+              <div class="sign_up_input_icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="sign_up_input_box">
+                <label for="confirm_password" class="confirm_password_label"
+                  >Confirm Password</label
+                >
+                <input type="password" id="confirm_password" required />
+              </div>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="agree" />
+              <label for="agree">I agree to all the terms and conditions</label>
+            </div>
+            <input type="submit" value="Sign Up" class="sign_up_submit" />
+          </form>
+        </div>
+        <div class="bottom_box">
+          <div class="bottom_section">
+            <div class="bottom_section_context">
+              <span></span>
+              <p class="or">OR</p>
+              <span></span>
+            </div>
+          </div>
+          <div class="bottom_social">
+            <div class="bottom_social_icon bottom_login_facebook">
+              <i class="fab fa-facebook-square"></i>
+            </div>
+            <div class="bottom_social_icon bottom_login_twitter">
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div class="bottom_social_icon bottom_login_linkedin">
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-</body>
+    <!-- app js -->
+    <script src="js/app.js"></script>
+  </body>
 </html>
