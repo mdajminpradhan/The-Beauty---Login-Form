@@ -1,476 +1,485 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background: url("images/12.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  i {
-    color: #2ecc71;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("images/12.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+i {
+  color: #2ecc71;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 75vh;
+  background: white;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 45% 10% 45%;
+}
+
+.left_section {
+  position: relative;
+}
+
+.left_section span {
+  width: 170px;
+  height: 6px;
+  background: #2ecc71;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 60px;
+}
+
+.left_section_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left_section i {
+  color: white;
+}
+
+.left_section .left_section_box .social_login {
+  margin: 25px 0;
+}
+
+.left_section .login_facebook,
+.login_twitter,
+.login_linkedin {
+  background: rgb(36, 36, 216);
+  color: white;
+  cursor: pointer;
+  padding: 15px 35px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  width: 35vh;
+}
+
+.left_section .login_facebook:hover {
+  background: rgb(48, 48, 180);
+}
+
+.left_section .login_twitter {
+  background: deepskyblue;
+}
+
+.left_section .login_twitter:hover {
+  background: rgb(0, 164, 219);
+}
+
+.left_section .login_linkedin {
+  background: #0072b1;
+}
+
+.left_section .login_linkedin:hover {
+  background: #0f6390;
+}
+
+.middle_section {
+  text-align: center;
+}
+
+.middle_section_context {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.middle_section span {
+  height: 20vh;
+  width: 1px;
+  background: #ddd;
+  display: block;
+}
+
+.middle_section .or {
+  border: 1px solid #ddd;
+  color: #20303c;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 10px;
+  margin: 25px 0;
+}
+
+.right_section {
+  position: relative;
+  overflow: hidden;
+}
+
+.right_section .button_box {
+  border: 1px solid deepskyblue;
+  text-align: center;
+  width: 55%;
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.right_section .bg_active_button {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 120px;
+  height: 40px;
+  z-index: -1;
+  border: none;
+  background: deepskyblue;
+  border-radius: 35px;
+  transition: all 0.5s;
+}
+
+.right_section .button_box .login_button,
+.right_section .button_box .signup_button {
+  background: transparent;
+  border: none;
+  z-index: 1;
+}
+
+.right_section .login_button {
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.right_section .signup_button {
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+/* login starts here */
+
+.right_section .login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  transition: all 1s;
+}
+
+.right_section .login .login_input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 5px;
+  margin: 35px 0;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.right_section .login .login_input .login_input_box {
+  width: 100%;
+}
+
+.right_section .login_input label {
+  position: absolute;
+  bottom: 27%;
+  left: 10%;
+  display: block;
+  z-index: -1;
+  transition: all 0.5s;
+  color: #20303c;
+}
+
+.label_up {
+  bottom: 110% !important;
+  left: 5% !important;
+  font-size: 0.9rem;
+}
+
+.right_section .login_input input {
+  width: 100%;
+  padding: 5px 25px;
+  background: none;
+  z-index: 1;
+  border: none;
+  outline: none;
+}
+
+.right_section .login .checkbox {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.right_section .login .checkbox label {
+  color: #20303c;
+  position: absolute;
+  top: -5% !important;
+  margin-left: 10px;
+}
+
+.login_submit {
+  background: white;
+  border: 1px solid deepskyblue;
+  padding: 10px;
+  border-radius: 40px;
+  cursor: pointer;
+  width: 50%;
+  margin: 0 auto;
+  transition: all 0.8s;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+}
+
+.login_submit:hover {
+  background: deepskyblue;
+  color: white;
+}
+
+/* sign up starts here */
+.right_section .sign_up {
+  position: absolute;
+  top: 55%;
+  left: 150%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  transition: all 1s;
+}
+
+.right_section .sign_up .sign_up_input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 5px;
+  margin: 35px 0;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.right_section .sign_up .sign_up_input .sign_up_input_box {
+  width: 100%;
+}
+
+.right_section .sign_up_input label {
+  position: absolute;
+  bottom: 27%;
+  left: 10%;
+  display: block;
+  z-index: -1;
+  transition: all 0.5s;
+  color: #20303c;
+}
+
+.label_up {
+  bottom: 110% !important;
+  left: 5% !important;
+  font-size: 0.9rem;
+}
+
+.right_section .sign_up_input input {
+  width: 100%;
+  padding: 5px 25px;
+  background: none;
+  z-index: 1;
+  border: none;
+  outline: none;
+}
+
+.right_section .sign_up .password {
+  margin-bottom: 20px;
+}
+
+.right_section .sign_up .checkbox {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.right_section .sign_up .checkbox label {
+  color: #20303c;
+  position: absolute;
+  top: -5% !important;
+  margin-left: 10px;
+}
+
+.sign_up_submit {
+  background: white;
+  border: 1px solid deepskyblue;
+  padding: 10px;
+  border-radius: 40px;
+  cursor: pointer;
+  width: 50%;
+  margin: 0 auto;
+  transition: all 0.8s;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+}
+
+.sign_up_submit:hover {
+  background: deepskyblue;
+  color: white;
+}
+
+.bottom_box {
+  display: none;
+}
+
+.right_section .bottom_section {
+  display: flex;
+}
+
+.right_section .bottom_section span {
+  width: 30vw;
+  height: 1px;
+  background: #ddd;
+  display: block;
+}
+
+.bottom_section .or {
+  border: 1px solid #ddd;
+  color: #20303c;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 10px;
+  margin: 0 20px;
+}
+
+.bottom_section_context {
+  position: absolute;
+  bottom: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+}
+
+.bottom_social {
+  display: flex;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
+
+.bottom_social_icon {
+  margin: 0 30px;
+}
+
+.bottom_social_icon i {
+  font-size: 2.4rem;
+}
+
+.bottom_social .bottom_login_facebook i {
+  color: rgb(36, 36, 216);
+}
+
+.bottom_social .bottom_login_twitter i {
+  color: rgb(0, 164, 219);
+}
+
+.bottom_social .bottom_login_linkedin i {
+  color: #0072b1;
+}
+
+/* responsiveness started */
+/* for screen 1440px */
+@media only screen and (max-width: 1440px) {
   .wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    height: 75vh;
-    background: white;
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: 45% 10% 45%;
+    width: 70% !important;
   }
-  
-  .left_section {
-    position: relative;
+}
+
+/* for screen 1260px */
+@media only screen and (max-width: 1260px) {
+  .wrapper {
+    width: 80% !important;
   }
-  
-  .left_section span {
-    width: 170px;
-    height: 6px;
-    background: #2ecc71;
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 60px;
+
+  .bg_active_button {
+    width: 50% !important;
   }
-  
-  .left_section_box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+  .button_box {
+    width: 50% !important;
   }
-  
-  .left_section i {
-    color: white;
+}
+
+/* for screen 820px */
+@media only screen and (max-width: 860px) {
+  .wrapper {
+    width: 95% !important;
   }
-  
-  .left_section .left_section_box .social_login {
-    margin: 25px 0;
+
+  .button_box {
+    width: 70% !important;
   }
-  
-  .left_section .login_facebook,
-  .login_twitter,
-  .login_linkedin {
-    background: rgb(36, 36, 216);
-    color: white;
-    cursor: pointer;
-    padding: 15px 35px;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    width: 35vh;
+}
+
+/* for screen 720px */
+@media only screen and (max-width: 720px) {
+  .wrapper {
+    width: 90% !important;
+    height: 90vh !important;
+    grid-template-columns: 100%;
   }
-  
-  .left_section .login_facebook:hover {
-    background: rgb(48, 48, 180);
-  }
-  
-  .left_section .login_twitter {
-    background: deepskyblue;
-  }
-  
-  .left_section .login_twitter:hover {
-    background: rgb(0, 164, 219);
-  }
-  
-  .left_section .login_linkedin {
-    background: #0072b1;
-  }
-  
-  .left_section .login_linkedin:hover {
-    background: #0f6390;
-  }
-  
-  .middle_section {
-    text-align: center;
-  }
-  
-  .middle_section_context {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .middle_section span {
-    height: 20vh;
-    width: 1px;
-    background: #ddd;
-    display: block;
-  }
-  
-  .middle_section .or {
-    border: 1px solid #ddd;
-    color: #20303c;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    padding-top: 10px;
-    margin: 25px 0;
-  }
-  
-  .right_section {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .right_section .button_box {
-    border: 1px solid deepskyblue;
-    text-align: center;
-    width: 55%;
-    margin: 0 auto;
-    border-radius: 30px;
-    padding: 5px;
-    position: relative;
-    overflow: hidden;
-    margin-top: 50px;
-  }
-  
-  .right_section .bg_active_button {
-    position: absolute;
-    top: -5px;
-    left: 0;
-    width: 120px;
-    height: 40px;
-    z-index: -1;
-    border: none;
-    background: deepskyblue;
-    border-radius: 35px;
-    transition: all 0.5s;
-  }
-  
-  .right_section .button_box .login_button,
-  .right_section .button_box .signup_button {
-    background: transparent;
-    border: none;
-    z-index: 1;
-  }
-  
-  .right_section .login_button {
-    margin-right: 25px;
-    cursor: pointer;
-  }
-  
-  .right_section .signup_button {
-    margin-left: 25px;
-    cursor: pointer;
-  }
-  
-  /* login starts here */
-  
-  .right_section .login {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 85%;
-    transition: all 1s;
-  }
-  
-  .right_section .login .login_input {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding-bottom: 5px;
-    margin: 35px 0;
-    border-bottom: 1px solid #ddd;
-    position: relative;
-  }
-  
-  .right_section .login .login_input .login_input_box {
-    width: 100%;
-  }
-  
-  .right_section .login_input label {
-    position: absolute;
-    bottom: 27%;
-    left: 10%;
-    display: block;
-    z-index: -1;
-    transition: all 0.5s;
-    color: #20303c;
-  }
-  
-  .label_up {
-    bottom: 110% !important;
-    left: 5% !important;
-    font-size: 0.9rem;
-  }
-  
-  .right_section .login_input input {
-    width: 100%;
-    padding: 5px 25px;
-    background: none;
-    z-index: 1;
-    border: none;
-    outline: none;
-  }
-  
-  .right_section .login .checkbox {
-    position: relative;
-    margin-bottom: 20px;
-  }
-  
-  .right_section .login .checkbox label {
-    color: #20303c;
-    position: absolute;
-    top: -5% !important;
-    margin-left: 10px;
-  }
-  
-  .login_submit {
-    background: white;
-    border: 1px solid deepskyblue;
-    padding: 10px;
-    border-radius: 40px;
-    cursor: pointer;
-    width: 50%;
-    margin: 0 auto;
-    transition: all 0.8s;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1rem;
-  }
-  
-  .login_submit:hover {
-    background: deepskyblue;
-    color: white;
-  }
-  
-  /* sign up starts here */
-  .right_section .sign_up {
-    position: absolute;
-    top: 55%;
-    left: 150%;
-    transform: translate(-50%, -50%);
-    width: 85%;
-    transition: all 1s;
-  }
-  
-  .right_section .sign_up .sign_up_input {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding-bottom: 5px;
-    margin: 35px 0;
-    border-bottom: 1px solid #ddd;
-    position: relative;
-  }
-  
-  .right_section .sign_up .sign_up_input .sign_up_input_box {
-    width: 100%;
-  }
-  
-  .right_section .sign_up_input label {
-    position: absolute;
-    bottom: 27%;
-    left: 10%;
-    display: block;
-    z-index: -1;
-    transition: all 0.5s;
-    color: #20303c;
-  }
-  
-  .label_up {
-    bottom: 110% !important;
-    left: 5% !important;
-    font-size: 0.9rem;
-  }
-  
-  .right_section .sign_up_input input {
-    width: 100%;
-    padding: 5px 25px;
-    background: none;
-    z-index: 1;
-    border: none;
-    outline: none;
-  }
-  
-  .right_section .sign_up .password {
-    margin-bottom: 20px;
-  }
-  
-  .right_section .sign_up .checkbox {
-    position: relative;
-    margin-bottom: 20px;
-  }
-  
-  .right_section .sign_up .checkbox label {
-    color: #20303c;
-    position: absolute;
-    top: -5% !important;
-    margin-left: 10px;
-  }
-  
-  .sign_up_submit {
-    background: white;
-    border: 1px solid deepskyblue;
-    padding: 10px;
-    border-radius: 40px;
-    cursor: pointer;
-    width: 50%;
-    margin: 0 auto;
-    transition: all 0.8s;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1rem;
-  }
-  
-  .sign_up_submit:hover {
-    background: deepskyblue;
-    color: white;
-  }
-  
-  .right_section .bottom_section {
-    display: flex;
-  }
-  
-  .right_section .bottom_section span {
-    width: 30vw;
-    height: 1px;
-    background: #ddd;
-    display: block;
-  }
-  
+
   .bottom_box {
-      display: none;
+    display: block;
   }
-  
-  .bottom_section .or {
-    border: 1px solid #ddd;
-    color: #20303c;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    padding-top: 10px;
-    margin: 0 20px;
+
+  .left_section,
+  .middle_section {
+    display: none;
   }
-  
-  .bottom_section_context {
-    position: absolute;
-    bottom: 12%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
+
+  .bottom_section {
+    display: block;
   }
-  
-  .bottom_social {
-    display: flex;
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50%, -10%);
+
+  .button_box {
+    margin-top: 50px !important;
   }
-  
-  .bottom_social_icon {
-    margin: 0 30px;
+
+  .sign_up {
+    top: 50% !important;
   }
-  
-  .bottom_social_icon i {
-    font-size: 2.4rem;
+
+  .login {
+    top: 45% !important;
+    /* background: #000; */
   }
-  
-  .bottom_social .bottom_login_facebook i {
-    color: rgb(36, 36, 216);
+
+  .sign_up_input {
+    margin: 40px 0 !important;
   }
-  
-  .bottom_social .bottom_login_twitter i {
-    color: rgb(0, 164, 219);
+
+  .right_section .login_button {
+    margin-right: 45px;
   }
-  
-  .bottom_social .bottom_login_linkedin i {
-    color: #0072b1;
+
+  .right_section .signup_button {
+    margin-left: 45px;
   }
-  
-  /* responsiveness started */
-  /* for screen 1440px */
-  @media only screen and (max-width: 1440px) {
-    .wrapper {
-      width: 70% !important;
-    }
+
+  .login .login_input {
+    margin: 50px 0 !important;
   }
-  
-  /* for screen 1260px */
-  @media only screen and (max-width: 1260px) {
-    .wrapper {
-      width: 80% !important;
-    }
-  
-    .bg_active_button {
-      width: 50% !important;
-    }
-  
-    .button_box {
-      width: 50% !important;
-    }
-  }
-  
-  /* for screen 820px */
-  @media only screen and (max-width: 860px) {
-    .wrapper {
-      width: 95% !important;
-    }
-  
-    .button_box {
-      width: 70% !important;
-    }
-  }
-  
-  /* for screen 720px */
-  @media only screen and (max-width: 720px) {
-    .wrapper {
-      width: 90% !important;
-      height: 90vh !important;
-      grid-template-columns: 100%;
-    }
-  
-    .bottom_box {
-        display: block;
-    }
-  
-    .left_section,
-    .middle_section {
-      display: none;
-    }
-  
-    .bottom_section {
-      display: block;
-    }
-  
-    .button_box {
-      margin-top: 20px !important;
-    }
-  
-    .sign_up {
-      top: 45% !important;
-    }
-  
-    .sign_up_input {
-      margin: 27px 0 !important;
-    }
-  
-    .right_section .login_button {
-      margin-right: 45px;
-    }
-  
-    .right_section .signup_button {
-      margin-left: 45px;
-    }
-  }
+}

@@ -91,6 +91,7 @@ let signup_button = document.querySelector('.signup_button').addEventListener('c
     active_button.style.left = "50%";
     login.style.left = "-150%";
     signUp.style.left = "50%";
+    
 });
 
 
